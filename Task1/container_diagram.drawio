@@ -1,0 +1,328 @@
+<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.0.0 Safari/537.36" version="29.0.3">
+  <diagram name="C4 Container Diagram - Future 2.0 Target Architecture" id="target-architecture-containers">
+    <mxGraphModel dx="3998" dy="2558" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1600" pageHeight="1200" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="title" value="C4 Container Diagram: Целевая архитектура &quot;Будущее 2.0&quot; (через год)" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=20;fontStyle=1" parent="1" vertex="1">
+          <mxGeometry x="390" y="-160" width="800" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="user-layer" value="ПОЛЬЗОВАТЕЛИ" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#666666;fontColor=#333333;fontSize=14;fontStyle=1;verticalAlign=top;" parent="1" vertex="1">
+          <mxGeometry x="30" y="-120" width="1410" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="user-operators" value="Операторы клиник" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;outlineConnect=0;fillColor=#dae8fc;strokeColor=#6c8ebf;" parent="1" vertex="1">
+          <mxGeometry x="320" y="-100" width="40" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="user-analysts" value="Аналитики и бизнес-пользователи" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;outlineConnect=0;fillColor=#dae8fc;strokeColor=#6c8ebf;" parent="1" vertex="1">
+          <mxGeometry x="140" y="-100" width="40" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="user-doctors" value="Врачи" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;outlineConnect=0;fillColor=#dae8fc;strokeColor=#6c8ebf;" parent="1" vertex="1">
+          <mxGeometry x="435" y="-100" width="40" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="user-clients" value="Клиенты банка" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;outlineConnect=0;fillColor=#dae8fc;strokeColor=#6c8ebf;" parent="1" vertex="1">
+          <mxGeometry x="585" y="-100" width="40" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="app-layer" value="СЛОЙ ПРИЛОЖЕНИЙ" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;fontSize=14;fontStyle=1;verticalAlign=top;" parent="1" vertex="1">
+          <mxGeometry x="30" y="80" width="1410" height="140" as="geometry" />
+        </mxCell>
+        <mxCell id="app-portal" value="Self-Service Portal&#xa;[Web Application: React]&#xa;&#xa;Портал самообслуживания для&#xa;построения отчетов и дашбордов" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#1ba1e2;fontColor=#ffffff;strokeColor=#006EAF;fontSize=11;align=center;" parent="1" vertex="1">
+          <mxGeometry x="70" y="110" width="180" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="app-operator-ui" value="Operator Interface&#xa;[Web Application: React]&#xa;&#xa;Интерфейс оператора клиники" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#1ba1e2;fontColor=#ffffff;strokeColor=#006EAF;fontSize=11;align=center;" parent="1" vertex="1">
+          <mxGeometry x="280" y="110" width="180" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="app-bi" value="Power BI&#xa;[BI Platform]&#xa;&#xa;Продвинутая аналитика&#xa;и визуализация" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#1ba1e2;fontColor=#ffffff;strokeColor=#006EAF;fontSize=11;align=center;" parent="1" vertex="1">
+          <mxGeometry x="490" y="110" width="180" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="app-mobile" value="Mobile Apps&#xa;[iOS/Android]&#xa;&#xa;Мобильные приложения&#xa;для клиентов и врачей" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#1ba1e2;fontColor=#ffffff;strokeColor=#006EAF;fontSize=11;align=center;" parent="1" vertex="1">
+          <mxGeometry x="700" y="110" width="180" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="integration-layer" value="СЛОЙ ИНТЕГРАЦИИ И API" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;fontSize=14;fontStyle=1;verticalAlign=top;" parent="1" vertex="1">
+          <mxGeometry x="30" y="280" width="1410" height="140" as="geometry" />
+        </mxCell>
+        <mxCell id="api-gateway" value="API Gateway&#xa;[Kong / AWS API Gateway]&#xa;&#xa;Единая точка входа,&#xa;аутентификация, rate limiting" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#60a917;fontColor=#ffffff;strokeColor=#2D7600;fontSize=11;align=center;" parent="1" vertex="1">
+          <mxGeometry x="100" y="310" width="200" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="event-streaming" value="Event Streaming&#xa;[Apache Kafka]&#xa;&#xa;Асинхронная передача событий&#xa;между доменами" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#60a917;fontColor=#ffffff;strokeColor=#2D7600;fontSize=11;align=center;" parent="1" vertex="1">
+          <mxGeometry x="520" y="305" width="200" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="cdc-service" value="CDC Service&#xa;[Debezium]&#xa;&#xa;Захват изменений данных&#xa;из операционных БД" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#60a917;fontColor=#ffffff;strokeColor=#2D7600;fontSize=11;align=center;" parent="1" vertex="1">
+          <mxGeometry x="1070" y="310" width="200" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="etl-orchestration" value="ETL Orchestration&#xa;[Apache Airflow]&#xa;&#xa;Оркестрация пакетных&#xa;загрузок данных" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#60a917;fontColor=#ffffff;strokeColor=#2D7600;fontSize=11;align=center;" parent="1" vertex="1">
+          <mxGeometry x="810" y="310" width="200" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="domain-layer" value="СЛОЙ ДОМЕННЫХ СЕРВИСОВ" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffe6cc;strokeColor=#d79b00;fontSize=14;fontStyle=1;verticalAlign=top;" parent="1" vertex="1">
+          <mxGeometry x="40" y="540" width="1400" height="180" as="geometry" />
+        </mxCell>
+        <mxCell id="domain-healthcare" value="Healthcare Domain&#xa;[Microservices: Java/Python]&#xa;&#xa;• Patient Management&#xa;• Appointment Service&#xa;• Clinic Operations&#xa;(без медкарт и исследований)" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f08705;fontColor=#ffffff;strokeColor=#C73500;fontSize=11;align=left;" parent="1" vertex="1">
+          <mxGeometry x="80" y="570" width="220" height="130" as="geometry" />
+        </mxCell>
+        <mxCell id="domain-fintech" value="Fintech Domain&#xa;[Microservices: Golang/Java]&#xa;&#xa;• Account Service&#xa;• Credit Service&#xa;• Payment Service&#xa;• Transaction Processing" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f08705;fontColor=#ffffff;strokeColor=#C73500;fontSize=11;align=left;" parent="1" vertex="1">
+          <mxGeometry x="330" y="570" width="220" height="130" as="geometry" />
+        </mxCell>
+        <mxCell id="domain-ai" value="AI/ML Domain&#xa;[Python Services]&#xa;&#xa;• Model Serving&#xa;• Feature Store&#xa;• ML Pipeline&#xa;• Model Registry (MLflow)" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f08705;fontColor=#ffffff;strokeColor=#C73500;fontSize=11;align=left;" parent="1" vertex="1">
+          <mxGeometry x="580" y="570" width="220" height="130" as="geometry" />
+        </mxCell>
+        <mxCell id="domain-corporate" value="Corporate Domain&#xa;[Services: Java]&#xa;&#xa;• HR Service&#xa;• Inventory Management&#xa;• Financial Reporting&#xa;• ERP Integration" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f08705;fontColor=#ffffff;strokeColor=#C73500;fontSize=11;align=left;" parent="1" vertex="1">
+          <mxGeometry x="830" y="570" width="220" height="130" as="geometry" />
+        </mxCell>
+        <mxCell id="storage-layer" value="СЛОЙ ХРАНЕНИЯ ДАННЫХ" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#e1d5e7;strokeColor=#9673a6;fontSize=14;fontStyle=1;verticalAlign=top;" parent="1" vertex="1">
+          <mxGeometry x="30" y="860" width="1410" height="230" as="geometry" />
+        </mxCell>
+        <mxCell id="db-healthcare" value="Healthcare DB&#xa;[PostgreSQL]&#xa;&#xa;Операционные данные&#xa;клиник и пациентов" style="shape=cylinder3;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;size=15;fillColor=#6a00ff;fontColor=#ffffff;strokeColor=#3700CC;fontSize=11;" parent="1" vertex="1">
+          <mxGeometry x="60" y="870" width="140" height="110" as="geometry" />
+        </mxCell>
+        <mxCell id="db-fintech" value="Fintech DB&#xa;[PostgreSQL]&#xa;&#xa;Операционные данные&#xa;финтех-сервисов" style="shape=cylinder3;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;size=15;fillColor=#6a00ff;fontColor=#ffffff;strokeColor=#3700CC;fontSize=11;" parent="1" vertex="1">
+          <mxGeometry x="250" y="915" width="140" height="110" as="geometry" />
+        </mxCell>
+        <mxCell id="data-lake" value="Data Lake&#xa;[S3 / Azure Data Lake Gen2]&#xa;&#xa;• Raw Zone&#xa;• Curated Zone&#xa;Хранение сырых данных&#xa;всех форматов" style="shape=cylinder3;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;size=15;fillColor=#6a00ff;fontColor=#ffffff;strokeColor=#3700CC;fontSize=11;align=center;" parent="1" vertex="1">
+          <mxGeometry x="440" y="920" width="160" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="domain-data-products" value="Domain Data Products&#xa;[Snowflake / Azure Synapse]&#xa;&#xa;• Healthcare Analytics&#xa;• Fintech Analytics&#xa;• AI Analytics&#xa;• Corporate Analytics&#xa;&#xa;Оптимизированные витрины&#xa;данных по доменам" style="shape=cylinder3;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;size=15;fillColor=#6a00ff;fontColor=#ffffff;strokeColor=#3700CC;fontSize=11;align=center;" parent="1" vertex="1">
+          <mxGeometry x="690" y="900" width="200" height="160" as="geometry" />
+        </mxCell>
+        <mxCell id="central-dwh" value="Central DWH&#xa;[Snowflake]&#xa;&#xa;Агрегированные метрики&#xa;для сквозной аналитики&#xa;(только KPI, без деталей)" style="shape=cylinder3;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;size=15;fillColor=#6a00ff;fontColor=#ffffff;strokeColor=#3700CC;fontSize=11;align=center;" parent="1" vertex="1">
+          <mxGeometry x="1040" y="920" width="160" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="feature-store" value="Feature Store&#xa;[Feast / Tecton]&#xa;&#xa;Хранение фич&#xa;для ML моделей" style="shape=cylinder3;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;size=15;fillColor=#6a00ff;fontColor=#ffffff;strokeColor=#3700CC;fontSize=11;align=center;" parent="1" vertex="1">
+          <mxGeometry x="1270" y="930" width="130" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="db-archive" value="Archive Storage&#xa;[S3 Glacier]&#xa;&#xa;Долгосрочное&#xa;хранение" style="shape=cylinder3;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;size=15;fillColor=#6a00ff;fontColor=#ffffff;strokeColor=#3700CC;fontSize=11;align=center;" parent="1" vertex="1">
+          <mxGeometry x="60" y="990" width="140" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="platform-layer" value="ПЛАТФОРМЕННЫЕ СЕРВИСЫ" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#666666;fontColor=#333333;fontSize=14;fontStyle=1;verticalAlign=top;" parent="1" vertex="1">
+          <mxGeometry x="30" y="1220" width="1410" height="160" as="geometry" />
+        </mxCell>
+        <mxCell id="data-catalog" value="Data Catalog&#xa;[AWS Glue / Unity Catalog]&#xa;&#xa;Метаданные, линия данных,&#xa;поиск датасетов" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#808080;fontColor=#ffffff;strokeColor=#666666;fontSize=11;align=center;" parent="1" vertex="1">
+          <mxGeometry x="70" y="1250" width="180" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="iam" value="IAM&#xa;[Azure AD / AWS IAM]&#xa;&#xa;Аутентификация,&#xa;авторизация, RBAC" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#808080;fontColor=#ffffff;strokeColor=#666666;fontSize=11;align=center;" parent="1" vertex="1">
+          <mxGeometry x="280" y="1250" width="180" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="monitoring" value="Monitoring &amp; Logging&#xa;[Prometheus, Grafana, ELK]&#xa;&#xa;Мониторинг производительности,&#xa;логирование, алерты" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#808080;fontColor=#ffffff;strokeColor=#666666;fontSize=11;align=center;" parent="1" vertex="1">
+          <mxGeometry x="490" y="1250" width="200" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="data-quality" value="Data Quality Service&#xa;[Great Expectations / Soda]&#xa;&#xa;Валидация качества данных,&#xa;профилирование" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#808080;fontColor=#ffffff;strokeColor=#666666;fontSize=11;align=center;" parent="1" vertex="1">
+          <mxGeometry x="720" y="1250" width="200" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="data-governance" value="Data Governance&#xa;[Collibra / Alation]&#xa;&#xa;Политики доступа,&#xa;классификация данных,&#xa;compliance" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#808080;fontColor=#ffffff;strokeColor=#666666;fontSize=11;align=center;" parent="1" vertex="1">
+          <mxGeometry x="950" y="1250" width="190" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="conn-1" value="" style="endArrow=classic;html=1;rounded=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;strokeWidth=2;strokeColor=#0066CC;" parent="1" source="user-operators" target="app-operator-ui" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="700" y="500" as="sourcePoint" />
+            <mxPoint x="750" y="450" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="conn-2" value="" style="endArrow=classic;html=1;rounded=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;strokeWidth=2;strokeColor=#0066CC;" parent="1" source="user-analysts" target="app-portal" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="700" y="500" as="sourcePoint" />
+            <mxPoint x="750" y="450" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="conn-3" value="" style="endArrow=classic;html=1;rounded=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;strokeWidth=2;strokeColor=#0066CC;" parent="1" source="user-doctors" target="app-mobile" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="700" y="500" as="sourcePoint" />
+            <mxPoint x="750" y="450" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="conn-4" value="HTTPS/REST" style="endArrow=classic;html=1;rounded=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.25;entryY=0;entryDx=0;entryDy=0;strokeWidth=2;strokeColor=#0066CC;" parent="1" source="app-portal" target="api-gateway" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="700" y="500" as="sourcePoint" />
+            <mxPoint x="750" y="450" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="conn-5" value="HTTPS/REST" style="endArrow=classic;html=1;rounded=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.75;entryY=0;entryDx=0;entryDy=0;strokeWidth=2;strokeColor=#0066CC;" parent="1" source="app-operator-ui" target="api-gateway" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="700" y="500" as="sourcePoint" />
+            <mxPoint x="750" y="450" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="conn-6" value="SQL Query" style="endArrow=classic;html=1;rounded=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.25;entryY=0;entryDx=0;entryDy=0;entryPerimeter=0;strokeWidth=2;strokeColor=#9900FF;dashed=1;edgeStyle=orthogonalEdgeStyle;" parent="1" source="app-bi" target="domain-data-products" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="700" y="500" as="sourcePoint" />
+            <mxPoint x="750" y="450" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="580" y="240" />
+              <mxPoint x="1540" y="240" />
+              <mxPoint x="1540" y="840" />
+              <mxPoint x="740" y="840" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="conn-7" value="REST API" style="endArrow=classic;html=1;rounded=0;exitX=0.25;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;strokeWidth=2;strokeColor=#0066CC;" parent="1" source="api-gateway" target="domain-healthcare" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="700" y="600" as="sourcePoint" />
+            <mxPoint x="750" y="550" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="conn-8" value="REST API" style="endArrow=classic;html=1;rounded=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;strokeWidth=2;strokeColor=#0066CC;" parent="1" source="api-gateway" target="domain-fintech" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="700" y="600" as="sourcePoint" />
+            <mxPoint x="750" y="550" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="conn-9" value="REST API" style="endArrow=classic;html=1;rounded=0;exitX=0.75;exitY=1;exitDx=0;exitDy=0;entryX=0.184;entryY=0.031;entryDx=0;entryDy=0;strokeWidth=2;strokeColor=#0066CC;entryPerimeter=0;" parent="1" source="api-gateway" target="domain-ai" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="700" y="600" as="sourcePoint" />
+            <mxPoint x="750" y="550" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="conn-10" value="Events" style="endArrow=classic;startArrow=classic;html=1;rounded=0;exitX=0.5;exitY=0;exitDx=0;exitDy=0;entryX=0.25;entryY=1;entryDx=0;entryDy=0;strokeWidth=2;strokeColor=#FF6600;dashed=1;" parent="1" source="domain-healthcare" target="event-streaming" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="700" y="600" as="sourcePoint" />
+            <mxPoint x="750" y="550" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="conn-11" value="Events" style="endArrow=classic;startArrow=classic;html=1;rounded=0;exitX=0.5;exitY=0;exitDx=0;exitDy=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;strokeWidth=2;strokeColor=#FF6600;dashed=1;" parent="1" source="domain-fintech" target="event-streaming" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="700" y="600" as="sourcePoint" />
+            <mxPoint x="750" y="550" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="conn-12" value="Events" style="endArrow=classic;startArrow=classic;html=1;rounded=0;exitX=0.5;exitY=0;exitDx=0;exitDy=0;entryX=0.75;entryY=1;entryDx=0;entryDy=0;strokeWidth=2;strokeColor=#FF6600;dashed=1;" parent="1" source="domain-ai" target="event-streaming" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="700" y="600" as="sourcePoint" />
+            <mxPoint x="750" y="550" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="conn-13" value="JDBC" style="endArrow=classic;html=1;rounded=0;exitX=0.25;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;entryPerimeter=0;strokeWidth=2;strokeColor=#9900FF;" parent="1" source="domain-healthcare" target="db-healthcare" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="700" y="800" as="sourcePoint" />
+            <mxPoint x="750" y="750" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="conn-14" value="JDBC" style="endArrow=classic;html=1;rounded=0;exitX=0.25;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;entryPerimeter=0;strokeWidth=2;strokeColor=#9900FF;" parent="1" source="domain-fintech" target="db-fintech" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="700" y="800" as="sourcePoint" />
+            <mxPoint x="750" y="750" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="conn-15" value="CDC Stream" style="endArrow=classic;html=1;rounded=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;entryPerimeter=0;strokeWidth=3;strokeColor=#009900;edgeStyle=orthogonalEdgeStyle;" parent="1" source="cdc-service" target="data-lake" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="700" y="800" as="sourcePoint" />
+            <mxPoint x="750" y="750" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="1490" y="355" />
+              <mxPoint x="1490" y="780" />
+              <mxPoint x="520" y="780" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="conn-16" value="ELT Pipeline" style="endArrow=classic;html=1;rounded=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;entryPerimeter=0;strokeWidth=3;strokeColor=#009900;" parent="1" source="data-lake" target="domain-data-products" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="690" y="920" as="sourcePoint" />
+            <mxPoint x="740" y="870" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="conn-17" value="Aggregated&#xa;Metrics" style="endArrow=classic;html=1;rounded=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;entryPerimeter=0;strokeWidth=3;strokeColor=#009900;" parent="1" source="domain-data-products" target="central-dwh" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="690" y="920" as="sourcePoint" />
+            <mxPoint x="740" y="870" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="conn-18" value="Metadata&#xa;Search" style="endArrow=classic;html=1;rounded=0;strokeWidth=2;strokeColor=#666666;dashed=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;exitX=0.25;exitY=1;exitDx=0;exitDy=0;" parent="1" source="app-portal" target="data-catalog" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="-100" y="370" as="sourcePoint" />
+            <mxPoint x="-100" y="1220" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="-100" y="200" />
+              <mxPoint x="-103.69999999999999" y="970" />
+              <mxPoint x="-103.69999999999999" y="970" />
+              <mxPoint x="-100" y="1295" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="conn-19" value="SQL Query" style="endArrow=classic;html=1;rounded=0;exitX=0;exitY=0.5;exitDx=0;exitDy=0;strokeWidth=2;strokeColor=#9900FF;entryX=0.107;entryY=0.962;entryDx=0;entryDy=0;entryPerimeter=0;" parent="1" source="app-portal" target="domain-data-products" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="700" y="800" as="sourcePoint" />
+            <mxPoint x="750" y="750" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="-60" y="155" />
+              <mxPoint x="-60" y="600" />
+              <mxPoint x="-60" y="1100" />
+              <mxPoint x="711" y="1100" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="conn-20" value="Feature&#xa;Storage" style="endArrow=classic;startArrow=classic;html=1;rounded=0;exitX=0.75;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;entryPerimeter=0;strokeWidth=2;strokeColor=#9900FF;edgeStyle=orthogonalEdgeStyle;" parent="1" source="domain-ai" target="feature-store" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="700" y="800" as="sourcePoint" />
+            <mxPoint x="750" y="750" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="conn-21" value="Auth" style="endArrow=classic;html=1;rounded=0;exitX=0.5;exitY=0;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;strokeWidth=1;strokeColor=#666666;dashed=1;" parent="1" source="iam" target="api-gateway" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="700" y="800" as="sourcePoint" />
+            <mxPoint x="750" y="750" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="370" y="1170" />
+              <mxPoint x="10" y="1170" />
+              <mxPoint x="10" y="355" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="legend-box" value="" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#000000;fontSize=12;fontStyle=1;verticalAlign=top;align=left;" parent="1" vertex="1">
+          <mxGeometry x="1610" y="290" width="370" height="440" as="geometry" />
+        </mxCell>
+        <mxCell id="legend-1" value="Синхронные API вызовы (REST/gRPC)" style="endArrow=classic;html=1;rounded=0;strokeWidth=2;strokeColor=#0066CC;" parent="1" edge="1">
+          <mxGeometry x="1" y="120" width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="1640" y="320" as="sourcePoint" />
+            <mxPoint x="1740" y="320" as="targetPoint" />
+            <mxPoint x="120" y="120" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="legend-2" value="Асинхронные события (Kafka)" style="endArrow=classic;html=1;rounded=0;strokeWidth=2;strokeColor=#FF6600;dashed=1;" parent="1" edge="1">
+          <mxGeometry x="1" y="100" width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="1640" y="340" as="sourcePoint" />
+            <mxPoint x="1740" y="340" as="targetPoint" />
+            <mxPoint x="100" y="100" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="legend-3" value="Потоки данных (ETL/ELT)" style="endArrow=classic;html=1;rounded=0;strokeWidth=3;strokeColor=#009900;" parent="1" edge="1">
+          <mxGeometry x="1" y="90" width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="1640" y="360" as="sourcePoint" />
+            <mxPoint x="1740" y="360" as="targetPoint" />
+            <mxPoint x="90" y="90" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="legend-4" value="SQL запросы к БД" style="endArrow=classic;html=1;rounded=0;strokeWidth=2;strokeColor=#9900FF;" parent="1" edge="1">
+          <mxGeometry x="1" y="70" width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="1640" y="380" as="sourcePoint" />
+            <mxPoint x="1740" y="380" as="targetPoint" />
+            <mxPoint x="70" y="70" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="legend-5" value="Служебные связи" style="endArrow=classic;html=1;rounded=0;strokeWidth=1;strokeColor=#666666;dashed=1;" parent="1" edge="1">
+          <mxGeometry x="1" y="70" width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="1640" y="400" as="sourcePoint" />
+            <mxPoint x="1740" y="400" as="targetPoint" />
+            <mxPoint x="70" y="70" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="legend-app" value="Приложение" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#1ba1e2;fontColor=#ffffff;strokeColor=#006EAF;fontSize=10;" parent="1" vertex="1">
+          <mxGeometry x="1760" y="420" width="100" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="legend-integration" value="Интеграция" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#60a917;fontColor=#ffffff;strokeColor=#2D7600;fontSize=10;" parent="1" vertex="1">
+          <mxGeometry x="1760" y="480" width="100" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="legend-domain" value="Домен" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f08705;fontColor=#ffffff;strokeColor=#C73500;fontSize=10;" parent="1" vertex="1">
+          <mxGeometry x="1760" y="540" width="100" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="legend-storage" value="Хранилище" style="shape=cylinder3;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;size=5;fillColor=#6a00ff;fontColor=#ffffff;strokeColor=#3700CC;fontSize=10;" parent="1" vertex="1">
+          <mxGeometry x="1760" y="600" width="100" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="legend-platform" value="Платформа" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#808080;fontColor=#ffffff;strokeColor=#666666;fontSize=10;" parent="1" vertex="1">
+          <mxGeometry x="1760" y="660" width="100" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="scenarios-box" value="КЛЮЧЕВЫЕ БИЗНЕС-СЦЕНАРИИ" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;fontSize=12;fontStyle=1;verticalAlign=top;align=left;" parent="1" vertex="1">
+          <mxGeometry x="1610" y="770" width="340" height="220" as="geometry" />
+        </mxCell>
+        <mxCell id="scenario-text" value="✓ Быстрая отчетность (&lt; 30 сек)&#xa;  → Domain Data Products + Snowflake&#xa;&#xa;✓ Независимое развитие доменов&#xa;  → Изолированные сервисы и БД&#xa;&#xa;✓ Масштабирование для новых бизнесов&#xa;  → Стандартизированный онбординг&#xa;&#xa;✓ Сквозная аналитика&#xa;  → Central DWH с агрегатами&#xa;&#xa;✓ Compliance и безопасность&#xa;  → IAM + Data Governance + Audit" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=top;whiteSpace=wrap;rounded=0;fontSize=10;" parent="1" vertex="1">
+          <mxGeometry x="1620" y="800" width="320" height="150" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
